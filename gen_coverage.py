@@ -47,6 +47,8 @@ for bmk in data.items():
     bmk_ckpts['points'] = sorted(bmk_ckpts['points'].items(), key=lambda x: float(x[1]), reverse=True)
     lst = []
     total = 0
+    if args.coverage == 1:
+        lst = bmk_ckpts['points']
     while total < args.coverage:
         point = bmk_ckpts['points'][0]
         total += float(point[1])

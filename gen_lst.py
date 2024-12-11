@@ -1,3 +1,7 @@
+# 输入json, lst文件
+# 输出指定覆盖率的lst
+# python3 gen_lst.py -l checkpoint-0-0-0.lst -j spec06_0.8coverage.json -o spec_0.8c.lst
+
 import argparse
 
 parser = argparse.ArgumentParser()
